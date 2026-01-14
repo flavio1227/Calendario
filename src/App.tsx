@@ -42,9 +42,9 @@ function App() {
       {/* Fixed Apple-style Navigation Button */}
       <a
         href="https://flavio1227.github.io/SIGEM1.1/"
-        className="fixed top-4 left-4 inline-block px-4 py-2 bg-white border border-gray-200 rounded-lg shadow-sm text-sm font-medium text-gray-900 hover:bg-gray-50 z-50 no-underline"
+        className="fixed top-4 left-4 inline-block px-4 py-2 bg-white border border-gray-300 rounded-lg shadow-sm text-sm font-medium text-black hover:bg-gray-100 z-50 no-underline transition-colors"
       >
-        Regresar
+        SIGEM
       </a>
 
       {/* Header */}
