@@ -1,4 +1,3 @@
-import { ArrowLeft } from 'lucide-react';
 import Calendar from './components/Calendar';
 import AvisosSection from './components/AvisosSection';
 
@@ -67,15 +66,6 @@ function App() {
           <AvisosSection />
         </div>
       </div>
-
-      {/* Regresar Button */}
-      <a 
-        href="https://flavio1227.github.io/SIGEM1.1/" 
-        className="flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 backdrop-blur-md rounded-lg border border-white/10 text-white/70 hover:text-white transition-all no-underline"
-      >
-        <ArrowLeft size={18} />
-        <span className="text-sm font-medium">Regresar</span>
-      </a>
     </div>
   );
 }
