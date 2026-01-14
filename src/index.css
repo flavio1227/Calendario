@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apple San Francisco Font Stack */
+@layer base {
+  * {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
+
 /* Pulse animation for important dates */
 @keyframes soft-pulse {
   0%, 100% {
