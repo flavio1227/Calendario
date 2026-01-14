@@ -12,29 +12,25 @@
 /* Pulse animation for important dates */
 @keyframes soft-pulse {
   0%, 100% {
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.15),
-                0 0 16px rgba(255, 255, 255, 0.08),
-                inset 0 0 12px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.08),
+                inset 0 0 8px rgba(0, 0, 0, 0.02);
     transform: scale(1);
   }
   50% {
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.25),
-                0 0 24px rgba(255, 255, 255, 0.12),
-                inset 0 0 16px rgba(255, 255, 255, 0.08);
-    transform: scale(1.02);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.12),
+                inset 0 0 12px rgba(0, 0, 0, 0.04);
+    transform: scale(1.01);
   }
 }
 
 .important-date {
   animation: soft-pulse 3s ease-in-out infinite;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+  background: #F5F5F7;
 }
 
 /* Today date styling */
 .today-date {
-  box-shadow: 0 0 16px rgba(6, 182, 212, 0.3),
-              0 0 32px rgba(6, 182, 212, 0.15),
-              inset 0 0 16px rgba(6, 182, 212, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Custom scrollbar for avisos section */
@@ -43,15 +39,15 @@
 }
 
 .overflow-y-auto::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
+  background: #F5F5F7;
   border-radius: 3px;
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
+  background: #D1D1D6;
   border-radius: 3px;
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: #AEAEB2;
 }

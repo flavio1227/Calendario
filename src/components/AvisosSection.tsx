@@ -31,15 +31,15 @@ export default function AvisosSection() {
 
   return (
     <div className="w-full max-w-2xl mt-12">
-      <h3 className="text-xl font-light text-white mb-6 tracking-wide">
+      <h3 className="text-xl font-light text-black mb-6 tracking-wide">
         {title}
       </h3>
 
-      <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 space-y-4 max-h-48 overflow-y-auto">
+      <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm space-y-4 max-h-48 overflow-y-auto">
         {avisos.map(aviso => (
           <div
             key={aviso.id}
-            className="text-white/70 text-sm leading-relaxed"
+            className="text-gray-700 text-sm leading-relaxed"
           >
             {aviso.texto}
           </div>

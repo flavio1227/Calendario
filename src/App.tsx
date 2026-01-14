@@ -38,7 +38,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex flex-col items-center justify-center p-6">
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6">
       {/* Fixed Apple-style Navigation Button */}
       <a
         href="https://flavio1227.github.io/SIGEM1.1/"
@@ -49,7 +49,7 @@ function App() {
 
       {/* Header */}
       <div className="w-full max-w-6xl mb-12">
-        <h1 className="text-4xl font-light text-white tracking-wide text-center">
+        <h1 className="text-4xl font-light text-black tracking-wide text-center">
           {mainTitle}
         </h1>
       </div>

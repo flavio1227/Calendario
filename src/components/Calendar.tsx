@@ -94,35 +94,35 @@ export default function Calendar({ importantDates }: CalendarProps) {
         <div className="flex items-center gap-1">
           <button
             onClick={handlePrevYear}
-            className="hidden p-2 text-white/60 hover:text-white/90 transition-colors"
+            className="hidden p-2 text-gray-500 hover:text-black transition-colors"
             aria-label="Año anterior"
           >
             <ChevronsLeft size={20} />
           </button>
           <button
             onClick={handlePrevMonth}
-            className="p-2 text-white/60 hover:text-white/90 transition-colors"
+            className="p-2 text-gray-500 hover:text-black transition-colors"
             aria-label="Mes anterior"
           >
             <ChevronLeft size={24} />
           </button>
         </div>
 
-        <h2 className="text-2xl font-light text-white tracking-wide">
+        <h2 className="text-2xl font-light text-black tracking-wide">
           {MONTHS[currentMonth]} {currentYear}
         </h2>
 
         <div className="flex items-center gap-1">
           <button
             onClick={handleNextMonth}
-            className="p-2 text-white/60 hover:text-white/90 transition-colors"
+            className="p-2 text-gray-500 hover:text-black transition-colors"
             aria-label="Mes siguiente"
           >
             <ChevronRight size={24} />
           </button>
           <button
             onClick={handleNextYear}
-            className="hidden p-2 text-white/60 hover:text-white/90 transition-colors"
+            className="hidden p-2 text-gray-500 hover:text-black transition-colors"
             aria-label="Año siguiente"
           >
             <ChevronsRight size={20} />
@@ -131,11 +131,11 @@ export default function Calendar({ importantDates }: CalendarProps) {
       </div>
 
       {/* Calendar Grid */}
-      <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+      <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
         {/* Day headers */}
         <div className="grid grid-cols-7 gap-2 mb-4">
           {DAYS.map(day => (
-            <div key={day} className="text-center text-white/50 text-sm font-medium py-2">
+            <div key={day} className="text-center text-gray-500 text-sm font-medium py-2">
               {day}
             </div>
           ))}
@@ -152,12 +152,12 @@ export default function Calendar({ importantDates }: CalendarProps) {
                 key={index}
                 className={`
                   aspect-square flex items-center justify-center rounded-lg text-sm
-                  ${day ? 'text-white/80' : 'text-transparent'}
+                  ${day ? 'text-black' : 'text-transparent'}
                   ${today
-                    ? 'today-date bg-cyan-500/20 border-2 border-cyan-400/50 font-semibold text-cyan-100'
+                    ? 'today-date bg-black text-white font-semibold'
                     : important
-                      ? 'important-date bg-white/10 font-medium'
-                      : 'hover:bg-white/5 transition-colors'}
+                      ? 'important-date bg-gray-100 font-medium'
+                      : 'hover:bg-gray-50 transition-colors'}
                 `}
               >
                 {day}
