@@ -152,11 +152,11 @@ export default function Calendar({ importantDates }: CalendarProps) {
                 key={index}
                 className={`
                   aspect-square flex items-center justify-center rounded-lg text-sm
-                  ${day ? 'text-black' : 'text-transparent'}
+                  ${day ? (important ? '' : 'text-black') : 'text-transparent'}
                   ${today
                     ? 'today-date bg-black text-white font-semibold'
                     : important
-                      ? 'important-date bg-gray-100 font-medium'
+                      ? 'important-date font-medium'
                       : 'hover:bg-gray-50 transition-colors'}
                 `}
               >
